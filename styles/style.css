@@ -14,8 +14,9 @@
     --card-heading-size: 1.5rem;
     --primary-desc-font-color: rgba(128, 128, 128, 1);
     --card-heading-color: rgba(32, 32, 32, 1);
-    --heading-font-color: #000000;
+    --black-font-color: #000000;
     --orange-color: rgba(254, 163, 1, 1);
+    --sky-blu-color: rgba(1, 172, 253, 1);
 }
 html, body {
     width: 100%;
@@ -99,11 +100,60 @@ ul > li > a {
 .nav-btn {
     background-color: orange;
 }
+.nav-btn:hover {
+    background-color: white;
+    border: 1px solid var(--orange-color);
+    color: var(--orange-color);
+    box-shadow: 8px 10px 12px 5px rgba(252, 215, 172, 0.671);
+}
 
-
-
-
-
+/* Banner Style here too */
+.banner-container {
+    width: min(100%, 1160px);
+    margin-inline: auto;
+}
+/* bannre head style */
+.banner-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.banner-head {
+    font-size: 3.3rem;
+    font-weight: bold;
+    line-height: 61px;
+    margin: 0px;
+}
+.ban-orng {
+    color: var(--orange-color);
+}
+.ban-black {
+    color: var(--black-font-color);
+}
+.sky-blue {
+    color: var(--sky-blu-color);
+}
+/*  banner desc style */
+.banner-desc {
+    font-size: var(--secondary-font-size);
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+/* banner button style */
+.banner-btn {
+    padding: 10px 47px;
+    color: #fff;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 12px;
+}
+.banner-btn:hover {
+    background-color: rgb(60, 232, 255);
+    color: rgb(1, 56, 139);
+    box-shadow: 8px 10px 12px 5px rgba(165, 234, 243, 0.788);
+}
 
 /* Media Quary for Mobile Device */
 @media screen and (max-width: 430px) {
@@ -121,5 +171,26 @@ ul > li > a {
     .responsive-nav-img {
         width: 46px;
         height: 46px;
+    }
+    /* banner section style */
+    .banner-container {
+        flex-direction: column-reverse;
+        width: 400px;
+        /* margin: 8px 16px; */
+        gap: 20px;
+    }
+    .hero-picture img {
+        width: 100%;
+    }
+    .banner-content {
+        text-align: center;
+    }
+    .banner-head {
+        font-size: 2rem;
+        line-height: auto;
+    }
+    .banner-desc {
+        font-size: 0.875rem;
+        margin: 18px 0;
     }
 }
