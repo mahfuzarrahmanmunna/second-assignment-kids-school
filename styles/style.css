@@ -156,7 +156,7 @@ ul > li > a {
 }
 
 /* Media Quary for Mobile Device */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 576px) {
     .school-name, .nav-content, .nav-btn {
         display: none;
     }
@@ -167,6 +167,7 @@ ul > li > a {
         margin: 0;
         padding: 12px 16px;
         border: 1px solid var(--orange-color);
+        width: 100%;
     }
     .responsive-nav-img {
         width: 46px;
@@ -175,13 +176,17 @@ ul > li > a {
     /* banner section style */
     .banner-container {
         flex-direction: column-reverse;
-        width: 400px;
+        /* width: 400px; */
         /* margin: 8px 16px; */
         gap: 20px;
+        padding: 10px;
     }
     .hero-picture img {
         width: 100%;
     }
+    /* .hero-picture {
+        width: 380px;
+    } */
     .banner-content {
         text-align: center;
     }
