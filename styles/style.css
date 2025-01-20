@@ -15,6 +15,11 @@
     --primary-desc-font-color: rgba(128, 128, 128, 1);
     --card-heading-color: rgba(32, 32, 32, 1);
     --heading-font-color: #000000;
+    --orange-color: rgba(254, 163, 1, 1);
+}
+html, body {
+    width: 100%;
+    height: 100%;
 }
 body {
     margin: 0;
@@ -52,6 +57,14 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+    position: relative;
+}
+.menu-icon {
+    display: none;
+}
+.menu-icon i {
+    font-size: 30px;
+    color: black;
 }
 .school-name {
     font-size: 32px;
@@ -85,4 +98,28 @@ ul > li > a {
 /* Nav button Style */
 .nav-btn {
     background-color: orange;
+}
+
+
+
+
+
+
+/* Media Quary for Mobile Device */
+@media screen and (max-width: 430px) {
+    .school-name, .nav-content, .nav-btn {
+        display: none;
+    }
+    .menu-icon {
+       display: block;
+    }
+    .navbar {
+        margin: 0;
+        padding: 12px 16px;
+        border: 1px solid var(--orange-color);
+    }
+    .responsive-nav-img {
+        width: 46px;
+        height: 46px;
+    }
 }
