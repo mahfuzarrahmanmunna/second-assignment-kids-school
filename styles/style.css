@@ -1,0 +1,88 @@
+/* Quicksand font for webpage */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
+:root {
+    --primay-desc-font-size: 1rem;
+    --secondary-font-size: 1.25rem;
+    --heading-font-size: 2.8rem;
+    --card-heading-size: 1.5rem;
+    --primary-desc-font-color: rgba(128, 128, 128, 1);
+    --card-heading-color: rgba(32, 32, 32, 1);
+    --heading-font-color: #000000;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+
+/* Shared Style for webpage */
+.display-flex {
+    display: flex;
+}
+.primary-btn {
+    font-size: var(--secondary-font-size);
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+/* Header Style */
+
+/* Navbar style */
+.navbar {
+    width: min(100%, 1160px);
+    margin-inline: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.school-name {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin: 16px 10px;
+}
+
+ul li {
+    list-style: none;
+}
+ul > li > a {
+    margin-right: 32px;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+}
+/* Navbar Color */
+.nave-link-1 {
+    color: rgba(254, 163, 1, 1);
+}
+.nave-link-2 {
+    color: skyblue;
+}
+.nave-link-3 {
+    color: rgba(5, 212, 223, 1);
+}
+.nave-link-4 {
+    color: rgba(93, 88, 239, 1);
+}
+/* Nav button Style */
+.nav-btn {
+    background-color: orange;
+}
