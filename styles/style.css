@@ -168,7 +168,9 @@ ul > li > a {
 }
 
 /* main section Style here too */
-
+main {
+    margin-bottom: 30px;
+}
 /* Curriculum Style here too */
 .curriculum-container {
     background-image: url("../assets/bg.png");
@@ -265,7 +267,7 @@ ul > li > a {
 /* Stories Section Style */
 .stories-container {
     background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-    
+    margin-bottom: 3.75rem;
 }
 .stories-content {
     width: min(100%, 1160px);
@@ -339,10 +341,59 @@ ul > li > a {
     margin: 0;
     padding: 19px 38px 28px 38px;
 }
+.stories-button {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.stories-button button {
+    padding: 0.625rem 3.75rem;
+    cursor: pointer;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 12px;
+    margin-bottom: 3.75rem;
+}
+.stories-button button:hover {
+    border: 1px solid black;
+    background-color: #fff;
+    color: #651ca1;
+    box-shadow: 8px 10px 12px 10px rgba(63, 60, 60, 0.726);
+}
+
+
+
+/* Footer style here */
+footer {
+    padding: 7.56rem;
+    justify-content: space-between;
+    background-color: rgba(1, 172, 253, 1);
+}
+.school {
+    align-items: center;
+    gap: 1px;
+}
+.school img {
+    width: 82px;
+}
+.footer-school-name {
+    margin: 0;
+    font-size: 2.6rem;
+}
+.about-school li {
+    list-style: none;
+}
+
+
 
 
 /* Media Quary for Mobile Device */
 @media screen and (max-width: 576px) {
+    body {
+        margin: 0;
+    }
     .school-name, .nav-content, .nav-btn {
         display: none;
     }
@@ -411,7 +462,10 @@ ul > li > a {
     .arrow {
         display: none;
     }
-
+    /* main */
+    main {
+        margin: 0;
+    }
     /* Stories Section Style */
     .stories-main-card {
         display: none;
@@ -420,10 +474,13 @@ ul > li > a {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         /* margin: auto 8px auto 8px; */
-        
+    }
+    .stories-container {
+        margin: 0;
     }
     .stories-content {
         gap: 10px;
+        padding: 10px;
         /* width: 358px; */
     }
     .stories-card img {
@@ -444,5 +501,14 @@ ul > li > a {
     }
     .stories-head-small {
         padding: 14px 32px 19px 22px;
+    }
+
+    /* footer style */
+    footer {
+        flex-direction: column;
+        padding: 65px 1 60px 16px;
+    }
+    .footer-school-name {
+        font-size: 2rem;
     }
 }
