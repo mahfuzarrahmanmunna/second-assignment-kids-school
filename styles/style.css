@@ -118,6 +118,16 @@ ul > li > a {
     color: var(--orange-color);
     box-shadow: 8px 10px 12px 5px rgba(252, 215, 172, 0.671);
 }
+/* Marquee Tag style here */
+.scroll-marquee {
+    width: min(100%, 1160px);
+    margin-inline: auto;
+}
+.marquee-tag {
+    color: rgba(93, 88, 239, 1);
+    font-weight: 600;
+    text-shadow: 3px 5px 8px 7px rgba(85, 114, 209, 0.692);
+}
 
 /* Banner Style here too */
 .banner-container {
@@ -366,13 +376,16 @@ main {
 
 
 /* Footer style here */
+
 footer {
-    padding: 7.56rem;
+    /* width: min(110%, 1070px);
+    margin-inline: auto; */
     justify-content: space-between;
     background-color: rgba(1, 172, 253, 1);
+    padding: 7.6rem;
 }
 .school {
-    align-items: center;
+    /* align-items: center; */
     gap: 1px;
 }
 .school img {
@@ -404,12 +417,15 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
+    margin: 0;
     margin-bottom: 35px;
 }
 .icon {
     font-size: 1.625rem;
     font-weight: bold;
     color: #fff;
+    margin: 0;
+    margin-bottom: 32px;
 }
 
 
@@ -530,12 +546,34 @@ footer {
     /* footer style */
     footer {
         flex-direction: column;
-        padding: 65px auto 60px 16px;
+        padding: 0;
+        margin: 0;
     }
     .footer-school-name {
         font-size: 2rem;
     }
     .school img {
         width: 70px;
+    }
+    .school {
+        margin-left: 16px;
+        margin-top: 60px;
+    }
+    .footer-desc {
+        margin-left: 21px;
+        margin-top: 22px;
+    }
+    .about-school {
+        margin-left: 20px;
+        margin-top: 32px;
+    }
+    .icon {
+        margin-top: 32px;
+        margin-left: 20px;
+    }
+    .scosal-icon {
+        margin-top: 36px;
+        margin-left: 20px;
+        margin-bottom: 60px;
     }
 }
