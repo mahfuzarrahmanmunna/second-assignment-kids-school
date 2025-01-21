@@ -40,6 +40,9 @@ body {
 .display-flex {
     display: flex;
 }
+.display-grid {
+    display: grid;
+}
 .primary-btn {
     font-size: var(--secondary-font-size);
     font-weight: 600;
@@ -48,6 +51,15 @@ body {
     padding: 10px 60px;
     cursor: pointer;
 }
+.primary-header {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+    color: var(--black-font-color);
+    text-align: center;
+}
+
 
 /* Header Style */
 
@@ -156,19 +168,10 @@ ul > li > a {
 }
 
 /* main section Style here too */
-main {
-    background-image: url("../assets/bg.png");
-}
-
 
 /* Curriculum Style here too */
-.primary-header {
-    margin-top: 60px;
-    margin-bottom: 80px;
-    font-size: var(--heading-font-size);
-    font-weight: bold;
-    color: var(--black-font-color);
-    text-align: center;
+.curriculum-container {
+    background-image: url("../assets/bg.png");
 }
 
 /* Curriculum Card Style */
@@ -231,7 +234,74 @@ main {
 .card-anchor-3 {
     color: rgba(135, 0, 255, 1);
 }
+/* arrow style */
+.arrow {
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.arrow i {
+    font-size: 24px;
+    color: #fff;
+}
+.arrow-box:hover {
+    /* background-color: white; */
+    border: 1px solid var(--orange-color);
+    color: orange;
+    box-shadow: 8px 10px 12px 5px rgba(252, 215, 172, 0.856);
+}
+.arrow-box {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--orange-color);
+    justify-content: center;
+    align-items: center;
+}
 
+/* Stories Section Style */
+.stories-container {
+    background: url("../assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    
+}
+.stories-content {
+    width: min(100%, 1160px);
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 19px;
+}
+.stories-main-card {
+    grid-row: span 2;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.stories-main-card img {
+    border-radius: 16px 16px 0 0;
+}
+#stories-date-main {
+    padding: 15px 20px;
+    background-color: rgba(60, 216, 232, 1);
+    border-radius: 16px;
+    position: relative;
+    right: -38px;
+    top: -18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.stories-head {
+    margin-top: 58px;
+    margin-bottom: 48px;
+    margin-left: 40px;
+    width: 462px;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+    line-height: 38px;
+}
 
 /* Media Quary for Mobile Device */
 @media screen and (max-width: 576px) {
@@ -299,5 +369,17 @@ main {
     }
     .anchor {
         font-size: 0.62rem;
+    }
+    .arrow {
+        display: none;
+    }
+
+    /* Stories Section Style */
+    .stories-main-card {
+        display: none;
+    }
+    .stories-content {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 }
