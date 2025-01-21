@@ -317,6 +317,29 @@ ul > li > a {
     border-radius: 16px 16px 0 0;
     width: 100%;
 }
+.stories-date {
+    padding: 10px 20px;
+    background-color: rgba(149, 178, 38, 1);
+    font-size: var(--primay-desc-font-size);
+    font-weight: 500;
+    color: #fff;
+    border-radius: 12px;
+    position: relative;
+    right: -38px;
+    top: -15px;
+    margin: 0;
+}
+#stories-second-color {
+    background-color: rgba(93, 88, 240, 1);
+}
+.stories-head-small {
+    font-size: var(--primay-desc-font-size);
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    padding: 19px 38px 28px 38px;
+}
+
 
 /* Media Quary for Mobile Device */
 @media screen and (max-width: 576px) {
@@ -413,5 +436,13 @@ ul > li > a {
     #stories-date {
         font-size: 0.56rem;
         font-weight: 500;
+    }
+    .stories-date {
+        padding: 5px 10px;
+        left: 22px;
+        font-size: 0.56rem;
+    }
+    .stories-head-small {
+        padding: 14px 32px 19px 22px;
     }
 }
