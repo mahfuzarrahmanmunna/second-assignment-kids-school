@@ -560,16 +560,24 @@ footer {
         margin-top: 60px;
     }
     .footer-desc {
+        font-size: 1rem;
         margin-left: 21px;
         margin-top: 22px;
+    }
+    .about {
+        font-size: 1.2rem;
     }
     .about-school {
         margin-left: 20px;
         margin-top: 32px;
     }
+    .about-school li a {
+        font-size: 1rem;
+    }
     .icon {
         margin-top: 32px;
         margin-left: 20px;
+        font-size: 1.3rem;
     }
     .scosal-icon {
         margin-top: 36px;
