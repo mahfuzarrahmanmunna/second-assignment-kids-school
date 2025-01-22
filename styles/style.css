@@ -542,6 +542,17 @@ footer {
     .stories-head-small {
         padding: 14px 32px 19px 22px;
     }
+    .stories-button {
+        margin-top: 20px;
+    }
+    .stories-button button {
+        margin-bottom: 40px;
+    }
+    .primary-header {
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 
     /* footer style */
     footer {
